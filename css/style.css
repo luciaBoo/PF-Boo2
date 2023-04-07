@@ -14,7 +14,7 @@ header {
   display: flex;
 }
 header nav {
-  font-family: Rubik;
+  font-family: "Rubik";
   font-size: smaller;
 }
 
@@ -108,6 +108,205 @@ footer {
 .rrss, .DAutor, .followUs {
   display: flex;
   justify-content: center;
+}
+
+/***GRID***/
+.gridSc {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px auto auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.gridPago {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px auto auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.gridPF {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px auto auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
+  }
+  li {
+    padding: 2px;
+    margin: 2px;
+  }
+  .productos {
+    width: 10px;
+    height: 10px;
+  }
+  footer, header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    background-color: rgba(248, 220, 220, 0.938);
+    margin: 15px;
+  }
+  ul {
+    padding: 5px;
+  }
+  h1 {
+    margin-top: 100px;
+  }
+  .ubicacion {
+    font-size: 15px;
+  }
+  .cajaContacto {
+    margin-top: 40px;
+    padding: 15px;
+  }
+  .imgIndex {
+    width: 100px;
+    height: 100px;
+  }
+  .gridContacto {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 170px auto auto;
+    grid-template-areas: "header header" "title title" "section3 section3" "section4 section4" "footer footer";
+  }
+  header {
+    grid-area: header;
+  }
+  h1 {
+    grid-area: title;
+  }
+  .section3 {
+    grid-area: section3;
+  }
+  .section4 {
+    grid-area: section4;
+  }
+  footer {
+    grid-area: footer;
+  }
+  .gridHome {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px auto auto auto auto auto auto auto;
+    grid-template-areas: "header" "section" "imgIndex1" "imgIndex2" "imgIndex3" "footer";
+  }
+  header {
+    grid-area: header;
+  }
+  section {
+    grid-area: section;
+  }
+  .imgIndex1 {
+    grid-area: imgIndex1;
+  }
+  .imgIndex2 {
+    grid-area: imgIndex2;
+  }
+  .imgIndex3 {
+    grid-area: imgIndex3;
+  }
+  footer {
+    grid-area: footer;
+  }
+}
+/* DESKTOP */
+@media (min-width: 800px) {
+  .imgIndex {
+    width: 300px;
+    height: 300px;
+  }
+  .gridContacto {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 130px auto auto;
+    grid-template-areas: "header header" "title title" "section1 section2" "footer footer";
+  }
+  header {
+    grid-area: header;
+  }
+  .h1Contacto {
+    grid-area: title;
+  }
+  .section1 {
+    grid-area: section1;
+  }
+  .section2 {
+    grid-area: section2;
+  }
+  footer {
+    grid-area: footer;
+  }
+  .gridHome {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px auto auto auto auto auto auto auto;
+    grid-template-areas: "header" "section" "imgIndex1" "imgIndex2" "imgIndex3" "footer";
+  }
+  header {
+    grid-area: header;
+  }
+  section {
+    grid-area: section;
+  }
+  .imgIndex1 {
+    grid-area: imgIndex1;
+  }
+  .imgIndex2 {
+    grid-area: imgIndex2;
+  }
+  .imgIndex3 {
+    grid-area: imgIndex3;
+  }
+  footer {
+    grid-area: footer;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
