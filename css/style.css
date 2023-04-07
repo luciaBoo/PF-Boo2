@@ -1,10 +1,6 @@
 header {
   background-image: url(../img/nav2.png);
 }
-header nav {
-  font-family: Rubik;
-  font-size: smaller;
-}
 header nav ul {
   list-style-type: none;
   padding: 30px;
