@@ -1,0 +1,14 @@
+@font-face {
+    font-family: $f-family-primario;
+    src: url(../fonts/Gloock-Regular.ttf);
+}
+*{
+    font-weight: lighter;
+}
+@font-face {
+    font-family: $f-family-secundario;
+    src: url(../fonts/Rubikfont.ttf);
+}
+li, h2, h3, h4{
+    font-family: $f-family-secundario;
+}

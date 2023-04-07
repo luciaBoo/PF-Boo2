@@ -1,0 +1,21 @@
+header{
+    background-image: url(../img/nav2.png);
+    display: flex;
+}
+nav{
+    font-family:$f-family-secundario; 
+    font-size: smaller;
+}
+
+ul{
+    list-style-type: none;
+    padding: 30px;
+}
+
+li{
+    font-size: larger;
+    display: inline;
+    padding: 5px 0 5px 120px;
+}
+a:hover{font-size:20px; background-color: rgba(255, 255, 255, 0.705);}
+a{text-decoration: none; transition: all .5s; border-radius:10px;}

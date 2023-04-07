@@ -1,0 +1,53 @@
+.datosP{
+    font-family: $f-family-secundario;
+    display: inline;
+}
+.cajaContacto{
+    background-color: $lightpink;
+    padding: 30px;
+}
+.ubicacion{
+    background-color: $lightpink;
+    padding: 5px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+}
+h1{
+    font-family: $f-family-primario;
+    padding: 15px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+}
+.tituloColeccion{
+    background-color:  $lightpink;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.metodosDePago, .preguntasFrecuentes{
+    background-color:rgb(235, 232, 232); padding: 15px;
+}
+.sticky{
+    position: sticky;
+}
+.IndexProductos{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.preciosFila{
+    display: flex;
+    flex-direction: row; 
+    justify-content:space-around;
+}
+footer{
+    display: grid;
+    background-color: rgb(245, 244, 243);
+    margin-top: 20px;
+}
+.rrss, .DAutor, .followUs{
+    display: flex;
+    justify-content: center;
+}
