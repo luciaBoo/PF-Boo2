@@ -1,3 +1,27 @@
-
+header {
+  background-image: url(../img/nav2.png);
+}
+header nav {
+  font-family: Rubik;
+  font-size: smaller;
+}
+header nav ul {
+  list-style-type: none;
+  padding: 30px;
+}
+header nav ul li {
+  font-size: larger;
+  display: inline;
+  padding: 5px 0 5px 120px;
+}
+header nav ul li a {
+  text-decoration: none;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+header nav ul li a:hover {
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.705);
+}
 
 /*# sourceMappingURL=style.css.map */

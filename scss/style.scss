@@ -1,0 +1,27 @@
+header{
+    background-image: url(../img/nav2.png);
+    nav{
+        font:{
+        family: Rubik;
+        size: smaller;
+        }
+        ul{
+            list-style-type: none;
+            padding: 30px;
+            li{
+                font-size: larger;
+                display: inline;
+                padding: 5px 0 5px 120px;
+                    a{
+                        text-decoration: none; 
+                        transition: all .5s; 
+                        border-radius:10px;
+                        &:hover{
+                            font-size:20px; 
+                            background-color: rgba(255, 255, 255, 0.705);
+                        }
+                    }
+                }
+            }
+        }
+    }
