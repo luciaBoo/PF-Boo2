@@ -34,6 +34,9 @@ h1 {
 .metodosDePago, .preguntasFrecuentes {
   background-color: rgb(235, 232, 232);
   padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .sticky {
@@ -50,6 +53,16 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.iframeUbicacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.respuestaPF {
+  padding: 5px 70px;
 }
 
 footer {
@@ -298,6 +311,10 @@ footer {
     width: 300px;
     height: 300px;
   }
+  .imgPF {
+    width: 300px;
+    height: 300px;
+  }
 }
 @font-face {
   font-family: "Gloock";
@@ -311,7 +328,7 @@ footer {
   font-family: "Rubik";
   src: url(../fonts/Rubikfont.ttf);
 }
-li, h2, h3, h4 {
+li, h2, h3, h4, h5, h6 {
   font-family: "Rubik";
 }
 
