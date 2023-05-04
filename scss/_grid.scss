@@ -109,22 +109,23 @@
         footer{grid-area: footer;}
     .gridHome{
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows: $auto $auto $auto $auto;
+        grid-template-columns: 100%;
+        grid-template-rows: $auto;
         grid-template-areas: 
-        "header header header header"
-        "nav nav nav nav"
-        "section section section section"
-        "card1 card2 card3 card4"
-        "footer footer footer footer"
+        "header"
+        "nav"
+        "section"
+        "fila1cards"
+        "fila2cards"
+        "fila3cards"
+        "footer"
         ;
     }
         header{grid-area: header;}
         nav{grid-area: nav;}
         section{grid-area: section;}
-        .card1{grid-area: card1;}
-        .card2{grid-area: card2;}
-        .card3{grid-area: card3;}
-        .card4{grid-area: card4;}
+        .fila1_cards{grid-area: fila1cards;}
+        .fila2_cards{grid-area: fila2cards;}
+        .fila3_cards{grid-area: fila3cards;}
         footer{grid-area: footer;}
 }
