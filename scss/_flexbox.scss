@@ -1,21 +1,20 @@
 /* MOBILE */
 @media (max-width:768px)
 {
-    ul{display: flex;flex-direction: row; justify-content: center;padding-left:0;}
+    ul{display: flex;flex-direction: row; justify-content: center;padding-left:0; padding: 5px;}
     li{padding:2px;margin:2px;}
-    .productos{width: 10px; height: 10px;}
     footer, header{display:flex;flex-direction: column;align-items: center;}
     nav{background-color: rgba(248, 220, 220, 0.938); margin: 15px;}
-    ul{padding: 5px;}
-    h1{margin-top: 100px;}
+    h1{margin-top: 10px;}
     .ubicacion{font-size: 15px;}
     .cajaContacto{margin-top: 40px; padding: 15px;}
-    .imgIndex{width:100px;height: 100px;}
-    
+    .imgIndex, .imgPF{width:100px;height: 100px;}
+    .imgPago{display: flex; justify-content: center; height: 200px;}
 }
 /* DESKTOP */
 @media (min-width: 800px) {
-    .imgIndex{width:300px; height: 300px;}
-    .imgPF{width:300px; height: 300px;}
+    .imgPF, .imgIndex{width:300px; height: 300px;}
+    .imgPago{display: flex; justify-content: center; height: 300px;}
+    .respuestaPF, .respuestaPago{display:flex;flex-direction: column;align-items: center;}
 }
     

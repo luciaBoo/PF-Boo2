@@ -43,26 +43,34 @@ h1 {
   position: sticky;
 }
 
-.IndexProductos {
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.preciosFila {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.p20 {
+  padding: 20px;
 }
 
 .iframeUbicacion {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 600px;
+  height: 450px;
 }
 
-.respuestaPF {
-  padding: 5px 70px;
+.CARD {
+  width: 100%;
+  height: auto;
+  background-color: rgb(231, 229, 229);
+  margin-top: 10px;
+  display: grid;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.card1, .card2, .card3, .card4 {
+  display: grid;
+}
+
+main {
+  display: grid;
 }
 
 footer {
@@ -77,24 +85,28 @@ footer {
 }
 
 header {
-  background-image: url(../img/nav2.png);
+  background-color: rgba(206, 180, 180, 0.63);
   display: flex;
+  justify-content: center;
 }
 
 nav {
   font-family: "Rubik";
   font-size: smaller;
+  flex-direction: row;
+  justify-content: baseline;
+  border-bottom: 0.5px solid gray;
 }
 
 ul {
   list-style-type: none;
-  padding: 30px;
+  padding: 10px;
 }
 
 li {
   font-size: larger;
   display: inline;
-  padding: 5px 0 5px 120px;
+  padding: 18px;
 }
 
 a:hover {
@@ -112,12 +124,16 @@ a {
 .gridSc {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 100px auto auto;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header" "nav" "main" "footer";
 }
 
 header {
   grid-area: header;
+}
+
+nav {
+  grid-area: nav;
 }
 
 main {
@@ -131,12 +147,16 @@ footer {
 .gridPago {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 100px auto auto;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header" "nav" "main" "footer";
 }
 
 header {
   grid-area: header;
+}
+
+nav {
+  grid-area: nav;
 }
 
 main {
@@ -150,12 +170,16 @@ footer {
 .gridPF {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 100px auto auto;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "nav" "main" "footer";
 }
 
 header {
   grid-area: header;
+}
+
+nav {
+  grid-area: nav;
 }
 
 main {
@@ -171,11 +195,14 @@ footer {
   .gridContacto {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 170px auto auto;
-    grid-template-areas: "header header" "title title" "section3 section3" "section4 section4" "footer footer";
+    grid-template-rows: 100px auto auto auto;
+    grid-template-areas: "header header" "nav nav" "title title" "section3 section3" "section4 section4" "footer footer";
   }
   header {
     grid-area: header;
+  }
+  nav {
+    grid-area: nav;
   }
   h1 {
     grid-area: title;
@@ -192,23 +219,20 @@ footer {
   .gridHome {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px auto auto auto auto auto auto auto;
-    grid-template-areas: "header" "section" "imgIndex1" "imgIndex2" "imgIndex3" "footer";
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header" "nav" "section" "cards1" "footer";
   }
   header {
     grid-area: header;
   }
+  nav {
+    grid-area: nav;
+  }
   section {
     grid-area: section;
   }
-  .imgIndex1 {
-    grid-area: imgIndex1;
-  }
-  .imgIndex2 {
-    grid-area: imgIndex2;
-  }
-  .imgIndex3 {
-    grid-area: imgIndex3;
+  .CARDS1 {
+    grid-area: cards1;
   }
   footer {
     grid-area: footer;
@@ -219,11 +243,14 @@ footer {
   .gridContacto {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 130px auto auto;
-    grid-template-areas: "header header" "title title" "section1 section2" "footer footer";
+    grid-template-rows: 100px auto auto auto auto;
+    grid-template-areas: "header header" "nav nav" "title title" "section1 section2" "footer footer";
   }
   header {
     grid-area: header;
+  }
+  nav {
+    grid-area: nav;
   }
   .h1Contacto {
     grid-area: title;
@@ -239,24 +266,21 @@ footer {
   }
   .gridHome {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px auto auto auto auto auto auto auto;
-    grid-template-areas: "header" "section" "imgIndex1" "imgIndex2" "imgIndex3" "footer";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header header header header" "nav nav nav nav" "section section section section" "CARD CARD CARD CARD" "footer footer footer footer";
   }
   header {
     grid-area: header;
   }
+  nav {
+    grid-area: nav;
+  }
   section {
     grid-area: section;
   }
-  .imgIndex1 {
-    grid-area: imgIndex1;
-  }
-  .imgIndex2 {
-    grid-area: imgIndex2;
-  }
-  .imgIndex3 {
-    grid-area: imgIndex3;
+  .CARD {
+    grid-area: CARD;
   }
   footer {
     grid-area: footer;
@@ -269,14 +293,11 @@ footer {
     flex-direction: row;
     justify-content: center;
     padding-left: 0;
+    padding: 5px;
   }
   li {
     padding: 2px;
     margin: 2px;
-  }
-  .productos {
-    width: 10px;
-    height: 10px;
   }
   footer, header {
     display: flex;
@@ -287,11 +308,8 @@ footer {
     background-color: rgba(248, 220, 220, 0.938);
     margin: 15px;
   }
-  ul {
-    padding: 5px;
-  }
   h1 {
-    margin-top: 100px;
+    margin-top: 10px;
   }
   .ubicacion {
     font-size: 15px;
@@ -300,20 +318,31 @@ footer {
     margin-top: 40px;
     padding: 15px;
   }
-  .imgIndex {
+  .imgIndex, .imgPF {
     width: 100px;
     height: 100px;
+  }
+  .imgPago {
+    display: flex;
+    justify-content: center;
+    height: 200px;
   }
 }
 /* DESKTOP */
 @media (min-width: 800px) {
-  .imgIndex {
+  .imgPF, .imgIndex {
     width: 300px;
     height: 300px;
   }
-  .imgPF {
-    width: 300px;
+  .imgPago {
+    display: flex;
+    justify-content: center;
     height: 300px;
+  }
+  .respuestaPF, .respuestaPago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @font-face {

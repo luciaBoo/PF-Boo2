@@ -35,24 +35,22 @@ h1{
 .sticky{
     position: sticky;
 }
-.IndexProductos{
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-around;
-}
-.preciosFila{
-    display: flex;
-    flex-direction: row; 
-    justify-content:space-around;
-}
+.p20{padding: 20px;}
 .iframeUbicacion{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width:600px; height:450px;
 }
-.respuestaPF{
-    padding: 5px 70px;
+.CARD{
+    width:100%;height: auto;
+    background-color: rgb(231, 229, 229);
+    margin-top:10px;
+    display: grid;
+    border-radius: 20px;align-items: center;
 }
+.card1, .card2, .card3, .card4{display: grid;}
+main{display: grid;}
 footer{
     display: grid;
     background-color: rgb(245, 244, 243);
