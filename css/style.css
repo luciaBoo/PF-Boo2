@@ -386,6 +386,7 @@ footer {
     display: flex;
     justify-content: center;
     height: 200px;
+    width: auto;
   }
 }
 /* DESKTOP */
