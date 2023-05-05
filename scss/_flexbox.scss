@@ -2,19 +2,22 @@
 @media (max-width:768px)
 {
     ul{display: flex;flex-direction: row; justify-content: center;padding-left:0; padding: 5px;}
-    li{padding:2px;margin:2px;}
+    li{padding:2px;margin:2px; font-size: small;}
     footer, header{display:flex;flex-direction: column;align-items: center;}
     nav{background-color: rgba(248, 220, 220, 0.938); margin: 15px;}
     h1{margin-top: 10px;}
     .ubicacion{font-size: 15px;}
     .cajaContacto{margin-top: 40px; padding: 15px;}
-    .imgIndex, .imgPF{width:100px;height: 100px;}
+    .iframeUbicacion{width:250px; height:250px;}
+    .imgIndex, .imgPF{width:200px;height: auto;}
     .imgPago{display: flex; justify-content: center; height: 200px;}
 }
 /* DESKTOP */
 @media (min-width: 800px) {
-    .imgPF, .imgIndex{width:300px; height: 300px;}
+    .imgPF, .imgIndex{width:210px; height: auto;}
     .imgPago{display: flex; justify-content: center; height: 300px;}
     .respuestaPF, .respuestaPago{display:flex;flex-direction: column;align-items: center;}
+    .fila1_cards, .fila2_cards, .fila3_cards {display: flex; flex-direction: row; align-items: center;}
+    .iframeUbicacion{width: 650px; height:500px;}
 }
     
